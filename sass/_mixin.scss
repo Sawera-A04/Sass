@@ -1,0 +1,13 @@
+@mixin commoncode($font1) {
+    color: $txt-wh;
+    font-size: $font1;
+    font-family: $family;                      
+    text-transform: capitalize
+}
+
+@mixin flexproperties {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

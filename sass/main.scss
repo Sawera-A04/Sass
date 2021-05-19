@@ -1,0 +1,42 @@
+@import "mixin";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 1- operators
+// 2- variables
+// 3- nesting
+// 4- parameters
+// 5- partials
+
+$txt-wh: #fff;
+$family: verdana;
+
+.main-header{
+    width: 100vw;
+    height: 100vh;
+    @include flexproperties();
+    background: #083D77;
+
+    h1{
+       @include commoncode(2.5rem);
+        
+        &:hover{
+            color: lightblue;
+        }
+    }
+
+    p{
+        @include commoncode(1.5rem);
+        margin-top: 0.5rem;
+
+        &:hover{
+            color: lightblue;
+        }
+    }
+}
+
+
+
